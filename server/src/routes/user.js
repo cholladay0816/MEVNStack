@@ -7,4 +7,8 @@ const userController = require('../controllers/userController')
 // Routes
 router.get('/', userController.index)
 
+router.get('/:id', userController.show)
+
+router.post('/new', userController.store)
+
 module.exports = router
