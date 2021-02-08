@@ -1,11 +1,10 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express')
+const router = express.Router()
 
 // Require controllers.
-var index_controller = require('../controllers/indexController');
-
+const indexController = require('../controllers/indexController')
 
 // Routes
-router.get('/', index_controller.index);
+router.get('/', indexController.index)
 
-module.exports = router;
+module.exports = router

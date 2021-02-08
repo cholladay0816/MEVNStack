@@ -1,7 +1,4 @@
-var User = require('../models/user');
 
-exports.index = function(req, res) {
-    let u = new User('Test', 'test@test.com');
-    res.send(u);
+exports.index = function (req, res) {
+  res.send('Welcome')
 }
-
